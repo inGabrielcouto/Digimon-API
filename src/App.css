@@ -1,0 +1,103 @@
+* {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.digimon-card {
+  border-radius: 50px;
+  width: 20%; 
+  border: 1px solid #ffffff;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  background-color: #1d1777;
+  transition: transform 0.2s ease-in-out;
+}
+
+.digimon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.digimon-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.digimon-list {
+  margin-top: 100px;
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.type {
+  margin-top: 20px;
+  border-radius: 20px; 
+  background-color: rgb(246, 136, 52);
+}
+
+.img-header {
+  width: 30%;
+  max-width: 200px; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.Header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.lopa {
+  border-radius: 10px; 
+  width: 35px;
+  margin-top: 30px;
+}
+
+.search {
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+input {
+  height: 30px;
+  margin-top: 30px;
+  max-width: 100%; 
+}
+
+
+input[title]:hover::after {
+  content: attr(title);
+  display: block;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 999;
+  margin-top: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .digimon-card {
+    width: 45%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .digimon-card {
+    width: 80%; 
+  }
+}
